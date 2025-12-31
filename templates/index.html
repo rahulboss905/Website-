@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes & IMP News</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1>📚 Notes</h1>
+<ul>
+{% for n in notes %}
+<li><b>{{n.title}}</b> - {{n.content}}</li>
+{% endfor %}
+</ul>
+
+<h1>📰 IMP News</h1>
+<ul>
+{% for x in news %}
+<li>{{x.title}}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
